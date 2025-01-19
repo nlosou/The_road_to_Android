@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.the_road_to_android"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.the_road_to_android"
