@@ -4,6 +4,10 @@ fun main()
 {
     println(add(2,2))
     checkNumber(100)
+    for(i in 0..10)
+    {
+        println(i)
+    }
 }
 fun add(a:Int,b:Int):Int{
     return  a+b
