@@ -4,7 +4,7 @@ fun main()
 {
     println(add(2,2))
     checkNumber(100)
-    for(i in 0..10)
+    for(i in 0 until 10 step 2)
     {
         println(i)
     }
