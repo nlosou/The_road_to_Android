@@ -1,6 +1,6 @@
 package com.example.the_road_to_android
 
-class Person {
+open class Person {
     var name=""
     var age=0
     fun  eat(){
