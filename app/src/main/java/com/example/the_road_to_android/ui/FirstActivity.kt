@@ -1,6 +1,8 @@
 package com.example.the_road_to_android.ui
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.Toast
 
@@ -22,5 +24,19 @@ class FirstActivity : AppCompatActivity() {
         }
 
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main,menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId)
+        {
+            R.id.add_id->Toast.makeText(this, "启动2", Toast.LENGTH_SHORT).show()
+            R.id.remove_item-> Toast.makeText(this, "启动3", Toast.LENGTH_SHORT).show()
+        }
+        return true
     }
 }
