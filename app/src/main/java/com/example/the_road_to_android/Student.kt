@@ -8,12 +8,4 @@ class Student: Person() {
 
 }
 
-fun main()
-{
-    val map= mapOf("sjsj" to 1,"sjjsjs" to 2)
-    for((a,b) in map)
-    {
-        println(a+' '+b)
-    }
-    thread { println("ddjjd") }.start()
-}
+
