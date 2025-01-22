@@ -1,5 +1,6 @@
 package com.example.the_road_to_android.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -19,9 +20,10 @@ class FirstActivity : AppCompatActivity() {
         setContentView(binding.root)  // 设置内容视图
 
         // 使用绑定类访问按钮
-        binding.buttonPanel.setOnClickListener {
+        binding.buttonPanel.setOnClickListener {//setOnClickListener监听者，当点击按钮时，执行代码块里的函数
+            var intent=Intent(this,SecondActivity::class.java)
             Toast.makeText(this, "启动", Toast.LENGTH_SHORT).show()
-            finish()
+            startActivity(intent)
         }
 
 
