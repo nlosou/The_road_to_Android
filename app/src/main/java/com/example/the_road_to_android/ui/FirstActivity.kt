@@ -21,6 +21,7 @@ class FirstActivity : AppCompatActivity() {
         // 使用绑定类访问按钮
         binding.buttonPanel.setOnClickListener {
             Toast.makeText(this, "启动", Toast.LENGTH_SHORT).show()
+            finish()
         }
 
 
