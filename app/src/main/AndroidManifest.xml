@@ -14,22 +14,34 @@
         android:theme="@style/Theme.The_road_to_Android"
         tools:targetApi="35">
         <activity
-            android:name=".ui.SecondActivity"
+            android:name=".ui.ThirdActivity"
             android:exported="true" >
-        <intent-filter>
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https://www.yangmutea.email/"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.SecondActivity"
+            android:exported="true">
+            <intent-filter>
 
-            <!-- 定义动作 -->
-            <action android:name="com.example.the_road_to_android.ui.ACTION_START" />
+                <!-- 定义动作 -->
+                <action android:name="com.example.the_road_to_android.ui.ACTION_START" />
 
-            <!-- 定义类别 -->
-            <category android:name="android.intent.category.DEFAULT" />
-            <category android:name="android.intent.category.MY_CATEGORY"/>
-        </intent-filter>
+                <!-- 定义类别 -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.MY_CATEGORY" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".ui.FirstActivity"
             android:exported="true"
-            android:label="hello">
+            >
+
+
             <intent-filter>
 
                 <!-- 定义动作 -->
@@ -38,7 +50,6 @@
                 <!-- 定义类别 -->
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 
