@@ -1,6 +1,7 @@
 package com.example.the_road_to_android.ui
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -21,7 +22,9 @@ class FirstActivity : AppCompatActivity() {
 
         // 使用绑定类访问按钮
         binding.buttonPanel.setOnClickListener {//setOnClickListener监听者，当点击按钮时，执行代码块里的函数
-            var intent=Intent(this,SecondActivity::class.java)
+            //var intent=Intent(this,SecondActivity::class.java)
+            var intent=Intent(Intent.ACTION_VIEW)
+            intent.data= Uri.parse("https://www.yangmutea.email/")
             Toast.makeText(this, "启动", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
