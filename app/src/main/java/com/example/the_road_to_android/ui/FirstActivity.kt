@@ -5,47 +5,49 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Button
 import android.widget.Toast
-
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-
 import com.example.the_road_to_android.R
 import com.example.the_road_to_android.databinding.FirstLayoutBinding
+
 class FirstActivity : AppCompatActivity() {
+    // 使用 registerForActivityResult 注册启动活动
+    private val startForResult = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        // 在这里处理返回的结果
+        if (result.resultCode == RESULT_OK) {
+            val data = result.data?.getStringExtra("return")
+            Toast.makeText(this, "Received: $data", Toast.LENGTH_SHORT).show()
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        lateinit var binding: FirstLayoutBinding  // 声明绑定类
         super.onCreate(savedInstanceState)
-        binding = FirstLayoutBinding.inflate(layoutInflater)  // 使用绑定类初始化布局
+        val binding = FirstLayoutBinding.inflate(layoutInflater)  // 使用绑定类初始化布局
         setContentView(binding.root)  // 设置内容视图
 
         // 使用绑定类访问按钮
-        binding.buttonPanel.setOnClickListener {//setOnClickListener监听者，当点击按钮时，执行代码块里的函数
-
-
-            var data="hello SecondActivity"
-            //var intent=Intent(Intent.ACTION_DIAL)
-            var intent=Intent(this,SecondActivity::class.java)
-            //intent.data= Uri.parse("tel:15692758501")
-            intent.putExtra("extra_data",data)
+        binding.buttonPanel.setOnClickListener {
+            val data = "hello SecondActivity"
+            val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra("extra_data", data)
             Toast.makeText(this, "启动", Toast.LENGTH_SHORT).show()
-            startActivity(intent)
+            // 使用注册的 ActivityResultLauncher 启动 SecondActivity
+            startForResult.launch(intent)
         }
-
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.main,menu)
+        menuInflater.inflate(R.menu.main, menu)
         return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId)
-        {
-            R.id.add_id->Toast.makeText(this, "启动2", Toast.LENGTH_SHORT).show()
-            R.id.remove_item-> Toast.makeText(this, "启动3", Toast.LENGTH_SHORT).show()
+        when (item.itemId) {
+            R.id.add_id -> Toast.makeText(this, "启动2", Toast.LENGTH_SHORT).show()
+            R.id.remove_item -> Toast.makeText(this, "启动3", Toast.LENGTH_SHORT).show()
         }
         return true
     }
