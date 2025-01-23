@@ -6,15 +6,13 @@ import android.util.Log
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+
 import com.example.the_road_to_android.R
 import com.example.the_road_to_android.databinding.ActivitySecondBinding
-import com.example.the_road_to_android.databinding.FirstLayoutBinding
 
 class SecondActivity : AppCompatActivity()
 {
-    lateinit var binding: ActivitySecondBinding  // 声明绑定类
+    private lateinit var binding: ActivitySecondBinding  // 声明绑定类
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,8 +27,8 @@ class SecondActivity : AppCompatActivity()
         *
         * */
         binding.button2.setOnClickListener {
-            var intent = Intent()
-            var intent2 = Intent()
+            val intent = Intent()
+            val intent2 = Intent()
             intent.putExtra("return", "I am come back")
             setResult(RESULT_OK, intent)
             val extraData = intent2.getStringExtra("extra_data")
