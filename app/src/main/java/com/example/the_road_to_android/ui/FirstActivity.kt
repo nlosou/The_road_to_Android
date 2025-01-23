@@ -26,14 +26,14 @@ class FirstActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d("FirstActivity",this.toString())
+
         val binding = FirstLayoutBinding.inflate(layoutInflater)  // 使用绑定类初始化布局
         setContentView(binding.root)  // 设置内容视图
 
         // 使用绑定类访问按钮----绑定事件
         binding.buttonPanel.setOnClickListener {
 
-
+            Log.d("FirstActivity",this.toString())
             /*
 
             val data = "hello SecondActivity"
@@ -44,7 +44,7 @@ class FirstActivity : AppCompatActivity() {
             startForResult.launch(intent)
 
              */
-            var intent=Intent(this,FirstActivity::class.java)
+            var intent=Intent(this,SecondActivity::class.java)
             startActivity(intent)
 
         }

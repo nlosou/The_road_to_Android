@@ -9,4 +9,16 @@
         android:layout_width="274dp"
         android:layout_height="wrap_content"
         android:text="button_1" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/enter_password"
+        android:padding="12dp"
+        android:minHeight="48dp"
+        />
+
 </LinearLayout>

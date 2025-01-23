@@ -21,13 +21,10 @@ class SecondActivity : AppCompatActivity()
         setContentView(R.layout.activity_second)
         binding = ActivitySecondBinding.inflate(layoutInflater)  // 使用绑定类初始化布局
         setContentView(binding.root)  // 设置内容视图
-        /*
-        *
-        *
-        *
-        * */
+
         binding.button2.setOnClickListener {
-            val intent = Intent()
+            /*
+        * val intent = Intent()
             val intent2 = Intent()
             intent.putExtra("return", "I am come back")
             setResult(RESULT_OK, intent)
@@ -35,6 +32,13 @@ class SecondActivity : AppCompatActivity()
             Log.d("SecondActivity", "extra data if $extraData")
             println("sdjsjjs")
             finish()
+        *
+        *
+        * */
+
+            var intent=Intent(this,FirstActivity::class.java)
+            startActivity(intent)
+
         }
 
 

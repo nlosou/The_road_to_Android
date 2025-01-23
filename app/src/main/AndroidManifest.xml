@@ -39,6 +39,7 @@
         <activity
             android:name=".ui.FirstActivity"
             android:exported="true"
+            android:launchMode="singleTop"
             >
 
 
