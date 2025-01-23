@@ -3,6 +3,7 @@ package com.example.the_road_to_android.ui
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
@@ -19,7 +20,7 @@ class FirstActivity : AppCompatActivity() {
         // 在这里处理返回的结果
         if (result.resultCode == RESULT_OK) {
             val data = result.data?.getStringExtra("return")
-            Toast.makeText(this, "Received: $data", Toast.LENGTH_SHORT).show()
+            Log.d("FirstActivity","return data is $data")
         }
     }
 
