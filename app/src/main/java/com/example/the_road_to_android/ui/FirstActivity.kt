@@ -26,17 +26,27 @@ class FirstActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.d("FirstActivity",this.toString())
         val binding = FirstLayoutBinding.inflate(layoutInflater)  // 使用绑定类初始化布局
         setContentView(binding.root)  // 设置内容视图
 
-        // 使用绑定类访问按钮
+        // 使用绑定类访问按钮----绑定事件
         binding.buttonPanel.setOnClickListener {
+
+
+            /*
+
             val data = "hello SecondActivity"
             val intent = Intent(this, SecondActivity::class.java)
             intent.putExtra("extra_data", data)
             Toast.makeText(this, "启动", Toast.LENGTH_SHORT).show()
             // 使用注册的 ActivityResultLauncher 启动 SecondActivity
             startForResult.launch(intent)
+
+             */
+            var intent=Intent(this,FirstActivity::class.java)
+            startActivity(intent)
+
         }
     }
 
