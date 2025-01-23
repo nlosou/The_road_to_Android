@@ -23,8 +23,8 @@ class FirstActivity : AppCompatActivity() {
         // 使用绑定类访问按钮
         binding.buttonPanel.setOnClickListener {//setOnClickListener监听者，当点击按钮时，执行代码块里的函数
             //var intent=Intent(this,SecondActivity::class.java)
-            var intent=Intent(Intent.ACTION_VIEW)
-            intent.data= Uri.parse("https://www.yangmutea.email/")
+            var intent=Intent(Intent.ACTION_DIAL)
+            intent.data= Uri.parse("tel:15692758501")
             Toast.makeText(this, "启动", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
