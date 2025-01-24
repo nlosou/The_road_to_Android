@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.the_road_to_android.R
 import com.example.the_road_to_android.databinding.FirstLayoutBinding
 
-class FirstActivity : AppCompatActivity() {
+class FirstActivity : BaseActivity() {
     // 使用 registerForActivityResult 注册启动活动
     private val startForResult = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
@@ -26,7 +26,7 @@ class FirstActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        Log.d("FirstActivity","Task id is $taskId")
         val binding = FirstLayoutBinding.inflate(layoutInflater)  // 使用绑定类初始化布局
         setContentView(binding.root)  // 设置内容视图
 

@@ -25,6 +25,7 @@
         </activity>
         <activity
             android:name=".ui.SecondActivity"
+            android:launchMode="singleInstance"
             android:exported="true">
             <intent-filter>
 

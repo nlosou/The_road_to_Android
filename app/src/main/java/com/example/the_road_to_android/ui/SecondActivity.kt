@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.the_road_to_android.R
 import com.example.the_road_to_android.databinding.ActivitySecondBinding
 
-class SecondActivity : AppCompatActivity()
+class SecondActivity : BaseActivity()
 {
     private lateinit var binding: ActivitySecondBinding  // 声明绑定类
 
@@ -18,6 +18,7 @@ class SecondActivity : AppCompatActivity()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        Log.d("SecondActivity","Task id is$taskId")
         setContentView(R.layout.activity_second)
         binding = ActivitySecondBinding.inflate(layoutInflater)  // 使用绑定类初始化布局
         setContentView(binding.root)  // 设置内容视图
@@ -36,7 +37,7 @@ class SecondActivity : AppCompatActivity()
         *
         * */
 
-            var intent=Intent(this,FirstActivity::class.java)
+            var intent=Intent(this,ThirdActivity::class.java)
             startActivity(intent)
 
         }
