@@ -3,6 +3,28 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="/tmp/leetcode/editor/cn/[1534]统计好三元组.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/tmp/leetcode/editor/cn/doc/content/[1534]统计好三元组.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1534" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/tmp/leetcode/editor/cn/[1534]统计好三元组.kt" />
+              <option name="titleSlug" value="count-good-triplets" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[1566]重复至少 K 次且长度为 M 的模式.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/tmp/leetcode/editor/cn/doc/content/[1566]重复至少 K 次且长度为 M 的模式.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1566" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/tmp/leetcode/editor/cn/[1566]重复至少 K 次且长度为 M 的模式.kt" />
+              <option name="titleSlug" value="detect-pattern-of-length-m-repeated-k-or-more-times" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/tmp/leetcode/editor/cn/[1]两数之和.kt">
           <value>
             <LeetcodeEditor>
@@ -25,6 +47,50 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="/tmp/leetcode/editor/cn/[2427]公因子的数目.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/tmp/leetcode/editor/cn/doc/content/[2427]公因子的数目.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2427" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/tmp/leetcode/editor/cn/[2427]公因子的数目.kt" />
+              <option name="titleSlug" value="number-of-common-factors" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[2437]有效时间的数目.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/tmp/leetcode/editor/cn/doc/content/[2437]有效时间的数目.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2437" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/tmp/leetcode/editor/cn/[2437]有效时间的数目.kt" />
+              <option name="titleSlug" value="number-of-valid-clock-times" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[2708]一个小组的最大实力值.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/tmp/leetcode/editor/cn/doc/content/[2708]一个小组的最大实力值.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2708" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/tmp/leetcode/editor/cn/[2708]一个小组的最大实力值.kt" />
+              <option name="titleSlug" value="maximum-strength-of-a-group" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[2860]让所有学生保持开心的分组方法数.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/tmp/leetcode/editor/cn/doc/content/[2860]让所有学生保持开心的分组方法数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2860" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/tmp/leetcode/editor/cn/[2860]让所有学生保持开心的分组方法数.kt" />
+              <option name="titleSlug" value="happy-students" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/tmp/leetcode/editor/cn/[2944]购买水果需要的最少金币数.kt">
           <value>
             <LeetcodeEditor>
@@ -33,6 +99,28 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="/tmp/leetcode/editor/cn/[2944]购买水果需要的最少金币数.kt" />
               <option name="titleSlug" value="minimum-number-of-coins-for-fruits" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[2947]统计美丽子字符串 I.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/tmp/leetcode/editor/cn/doc/content/[2947]统计美丽子字符串 I.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2947" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/tmp/leetcode/editor/cn/[2947]统计美丽子字符串 I.kt" />
+              <option name="titleSlug" value="count-beautiful-substrings-i" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[2959]关闭分部的可行集合数目.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/tmp/leetcode/editor/cn/doc/content/[2959]关闭分部的可行集合数目.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2959" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/tmp/leetcode/editor/cn/[2959]关闭分部的可行集合数目.kt" />
+              <option name="titleSlug" value="number-of-possible-sets-of-closing-branches" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -69,6 +157,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="/tmp/leetcode/editor/cn/[3234]统计 1 显著的字符串的数量.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/tmp/leetcode/editor/cn/doc/content/[3234]统计 1 显著的字符串的数量.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3234" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/tmp/leetcode/editor/cn/[3234]统计 1 显著的字符串的数量.kt" />
+              <option name="titleSlug" value="count-the-number-of-substrings-with-dominant-ones" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="/tmp/leetcode/editor/cn/[845]数组中的最长山脉.kt">
           <value>
             <LeetcodeEditor>
@@ -77,6 +176,28 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="/tmp/leetcode/editor/cn/[845]数组中的最长山脉.kt" />
               <option name="titleSlug" value="longest-mountain-in-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[906]超级回文数.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/tmp/leetcode/editor/cn/doc/content/[906]超级回文数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn906" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/tmp/leetcode/editor/cn/[906]超级回文数.kt" />
+              <option name="titleSlug" value="super-palindromes" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/cn/[面试题 16.18]模式匹配.kt">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/tmp/leetcode/editor/cn/doc/content/[面试题 16.18]模式匹配.md" />
+              <option name="frontendQuestionId" value="leetcode.cn面试题 16.18" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/tmp/leetcode/editor/cn/[面试题 16.18]模式匹配.kt" />
+              <option name="titleSlug" value="pattern-matching-lcci" />
             </LeetcodeEditor>
           </value>
         </entry>

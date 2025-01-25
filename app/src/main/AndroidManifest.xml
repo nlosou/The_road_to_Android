@@ -43,7 +43,6 @@
             android:launchMode="singleTask"
             >
 
-
             <intent-filter>
 
                 <!-- 定义动作 -->
